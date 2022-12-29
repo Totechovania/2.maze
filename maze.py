@@ -104,8 +104,6 @@ if __name__ == '__main__':
                                    optimal_cords]
                         if optimal_cords[0] <= end[0]:
                             res_way[0] += 1
-                        else:
-                            res_way[0] -= 1
                         explored[res_cords] = min(explored.get(res_cords, res_way),
                                                   res_way)
                 if point[1]:
@@ -117,8 +115,6 @@ if __name__ == '__main__':
                                    optimal_cords]
                         if optimal_cords[1] >= end[1]:
                             res_way[0] += 1
-                        else:
-                            res_way[0] -= 1
                         explored[res_cords] = min(explored.get(res_cords, res_way),
                                                   res_way)
                 if point[2]:
@@ -130,8 +126,6 @@ if __name__ == '__main__':
                                    optimal_cords]
                         if optimal_cords[0] >= end[0]:
                             res_way[0] += 1
-                        else:
-                            res_way[0] -= 1
                         explored[res_cords] = min(explored.get(res_cords, res_way),
                                                   res_way)
                 if point[3]:
@@ -143,8 +137,6 @@ if __name__ == '__main__':
                                    optimal_cords]
                         if optimal_cords[1] <= end[1]:
                             res_way[0] += 1
-                        else:
-                            res_way[0] -= 1
                         explored[res_cords] = min(explored.get(res_cords, res_way),
                                                   res_way)
                 found[optimal_cords] = optimal_way
